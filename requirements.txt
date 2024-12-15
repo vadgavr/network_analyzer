@@ -1,0 +1,12 @@
+# Core dependencies
+pyyaml==6.0.1
+filelock==3.13.1
+
+# Optional: for more advanced logging (if needed)
+# logging==0.5.1.2
+
+# Development and testing dependencies
+pytest==7.4.3
+pytest-cov==4.1.0
+mypy==1.7.1
+pylint==3.0.2

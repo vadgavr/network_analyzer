@@ -1,0 +1,39 @@
+datacenter_map:
+  ethernet:
+    type: "Gigabit Ethernet"
+    version: "v2.0"
+    max_speed: "100 Gbit/s"
+    racks:
+      rack_1:
+        - host1: "192.168.1.10"
+          host2: "192.168.1.11"
+      rack_2:
+        - host3: "192.168.1.20"
+          host4: "192.168.1.21"
+    thresholds:
+      - bw:
+          - speed: 95
+          - units: "Gbit/s"
+        latency:
+          - lat: 0.1
+          - units: "microseconds"
+
+  infiniband:
+    type: "InfiniBand"
+    version: "v4.0"
+    max_speed: "200 Gbit/s"
+    fabric_type: "FDR"
+    racks:
+      rack_1:
+        - host1: "10.0.0.10"
+          host2: "10.0.0.11"
+      rack_2:
+        - host3: "10.0.0.20"
+          host4: "10.0.0.21"
+    thresholds:
+      - bw:
+          - speed: 180
+          - units: "Gbit/s"
+        latency:
+          - lat: 0.05
+          - units: "microseconds"
